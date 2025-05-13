@@ -1,8 +1,5 @@
 <?php
-$host="localhost";
-$user="root";
-$pass="";
-$db="escola";
+include('conexao.php');
 
 $conn=new mysqli($host,$user, $pass,$db);
 
