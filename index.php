@@ -25,14 +25,25 @@ $result = $conn->query($sql);
     </section>
     <section class="listar">
         <h2>Alunos Cadastrados</h2>
-        <ul>
-        <?php while ($aluno = $result->fetch_assoc()): ?>
-            <li>
-                <?php echo $aluno['nome'] . " - " . $aluno['email']; ?>
-                <a href="excluir.php?id=<?php echo $aluno['id']; ?>" onclick="return confirm ('Tem certeza que deseja excluir?')">[Excluir]</a>
-            </li>
-            <?php endwhile; ?>
-    </ul>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Sobrenome</th>
+                <th>E-mail</th>
+            </tr>
+            <?php while ($aluno = $result->fetch_assoc()): ?>
+                <tr>
+                    <td><? $aluno['id'];?></td>
+                    <td><?=$aluno['nome'];?></td>
+                    <td><?=$aluno['sobrenome'];?></td>
+                    <td><?=$aluno['email'];?></td>
+                    <td><a class="delete-btn" href="excluir.php?id=<?=$aluno['id']; ?>" onclick="return confirm ('Tem certeza que deseja excluir?')">Excluir</a></td>             
+                    
+                </tr>
+                <?php endwhile; ?>
+        </table>        
+    
         
     </section>
 
