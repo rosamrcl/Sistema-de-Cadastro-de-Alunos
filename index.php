@@ -12,7 +12,7 @@ $result = $conn->query($sql);
 </head>
 <body>
     <section class="inserir" id="inserir">
-        <form action="inserir.php" method="post">
+        <form action="inserir.php" method="POST">
             <label for="nome">Nome</label>
             <input type="text" name="nome" id="nome" placeholder="Nome">
             <label for="sobrenome">Sobrenome</label>
@@ -21,6 +21,7 @@ $result = $conn->query($sql);
             <input type="email" name="email" id="email" placeholder="E-mail">
             <input type="submit" value="Enviar">
         </form>
+        
     </section>
     <section class="listar">
         <h2>Alunos Cadastrados</h2>
