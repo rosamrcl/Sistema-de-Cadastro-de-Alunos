@@ -55,7 +55,11 @@ section{
     margin: 2rem;
     padding: 2rem;
 }
-
+.inserir{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .inserir form{
         background-color: var(--bg);
         border-radius: .5rem;
@@ -98,6 +102,15 @@ section{
     text-align: center;
 }
 
+.listar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.listar h2{
+    font-size: 3rem;
+    text-align: center;
+}
 
 .listar .box table tr th{
     color: var(--letra);
