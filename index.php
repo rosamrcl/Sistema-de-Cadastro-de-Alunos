@@ -41,7 +41,7 @@ $result = $conn->query($sql);
                         <td><?=$aluno['nome'];?></td>
                         <td><?=$aluno['sobrenome'];?></td>
                         <td><?=$aluno['email'];?></td>
-                        <td><a class="delete-btn" href="excluir.php?id=<?=$aluno['id']; ?>" onclick="return confirm ('Tem certeza que deseja excluir?')">Excluir</a></td>             
+                        <td><a class="btn" href="update.php?id=<?= $product['id'] ?>">Editar</a><a class="delete-btn" href="excluir.php?id=<?=$aluno['id']; ?>" onclick="return confirm ('Tem certeza que deseja excluir?')">Excluir</a></td>            
                         
                     </tr>
                     <?php endwhile; ?>
