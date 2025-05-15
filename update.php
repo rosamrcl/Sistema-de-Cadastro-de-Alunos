@@ -13,7 +13,7 @@ $stmt=$conn->prepare($sql);
 $stmt->bind_param("sssi", $nome, $sobrenome, $email, $id);
 
 if($stmt->execute()){
-    header("Location: index.php");
+    header("Location: edicao.php");
     exit();
 }else{
     echo "Erro ao inserir: " . $conn->error;

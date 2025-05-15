@@ -14,7 +14,7 @@ $result = $conn->query($sql);
 <body>
     <section class="inserir" id="inserir">
 
-        <form action="inserir.php" method="POST">
+        <form action="update.php" method="POST">
             <label for="nome">Nome</label>
             <input class="box" type="text" name="nome" id="nome" placeholder="Nome">
             <label for="sobrenome">Sobrenome</label>
@@ -41,7 +41,7 @@ $result = $conn->query($sql);
                         <td><?=$aluno['nome'];?></td>
                         <td><?=$aluno['sobrenome'];?></td>
                         <td><?=$aluno['email'];?></td>
-                        <td><a class="btn" href="update.php?id=<?= $aluno['id'] ?>">Editar</a><a class="delete-btn" href="excluir.php?id=<?=$aluno['id']; ?>" onclick="return confirm ('Tem certeza que deseja excluir?')">Excluir</a></td>            
+                        <td><a class="btn" href="update.php?id=<?= $paluno['id'] ?>">Editar</a><a class="delete-btn" href="excluir.php?id=<?=$aluno['id']; ?>" onclick="return confirm ('Tem certeza que deseja excluir?')">Excluir</a></td>            
                         
                     </tr>
                     <?php endwhile; ?>
